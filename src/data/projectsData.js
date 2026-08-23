@@ -3,8 +3,8 @@ import project2 from "../assets/projects/Web2.png";
 import project3 from "../assets/projects/Web3.png";
 import project4 from "../assets/projects/Web4.png";
 import project5 from "../assets/projects/Web5.png";
-import project6 from "../assets/projects/Web6.png";
-import project7 from "../assets/projects/Web7.png";
+import project6 from "../assets/projects/web6.png";
+import project7 from "../assets/projects/web7.png";
 export const projects = [
   {
     id: 1,
