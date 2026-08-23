@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import { trackEvent } from "../utils/analytics";
 import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
   return (
@@ -33,8 +34,15 @@ export default function Navbar() {
   <ThemeToggle />
 
   <a
-    href="/contact"
-    className="contact-button"
+     href="/contact"
+  className="contact-button"
+  onClick={() =>
+    trackEvent(
+      "click_contact",
+      "navigation",
+      "navbar"
+    )
+  }
   >
     <span>LET'S TALK</span>
 
